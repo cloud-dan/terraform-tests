@@ -1,0 +1,33 @@
+{
+	"name": "terraform-tests",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"eamodio.gitlens",
+		"ms-vscode.azure-account",
+		"ms-azure-devops.azure-pipelines",
+		"ms-vsts.team",
+		"ms-python.python",
+		"2gua.rainbow-brackets",
+		"oderwat.indent-rainbow",
+		"hashicorp.terraform",
+		"davidanson.vscode-markdownlint"
+	],
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/zsh",
+		"python.linting.enabled": true,
+		// PyLint
+		"python.linting.pylintEnabled": true,
+		// Pep8
+		"python.linting.pep8Enabled": true,
+		"python.linting.pep8Path": "pep8",
+		// Flake8
+		"python.linting.flake8Enabled": true,
+		"python.linting.flake8Path": "flake8"
+	},
+	"containerEnv": {
+	},
+	"mounts": [
+		//"source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host-home-folder,type=bind,consistency=cached"
+		//"source=${localEnv:HOME}/source,target=/source",
+	],
+}
