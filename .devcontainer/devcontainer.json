@@ -28,6 +28,7 @@
 	},
 	"mounts": [
 		//"source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host-home-folder,type=bind,consistency=cached"
-		//"source=${localEnv:HOME}/source,target=/source",
+		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind",
+		"source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind",
 	],
 }
