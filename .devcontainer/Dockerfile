@@ -1,8 +1,11 @@
-FROM python:3-alpine
+FROM python:3
 
-RUN apk add zsh
+RUN apt-get update && apt-get install -y \
+    apt-utils \
+    zsh \
+    build-essential
 
-RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+RUN  wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
 COPY .zshrc /root/.zshrc
 
