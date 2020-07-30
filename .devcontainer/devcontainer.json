@@ -31,4 +31,5 @@
 		"source=${localEnv:HOME}/.ssh,target=/home/cloud-dan/.ssh,type=bind",
 		"source=${localEnv:HOME}/.gitconfig,target=/home/cloud-dan/.gitconfig,type=bind",
 	],
+	"remoteUser": "cloud-dan"
 }
