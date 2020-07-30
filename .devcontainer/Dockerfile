@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:light
+FROM python:3-alpine
 
 RUN apk add zsh
 
